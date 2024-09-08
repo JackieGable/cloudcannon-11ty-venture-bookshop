@@ -1,18 +1,18 @@
 :root {
---secondary0__background : #208393;
---secondary0__foreground : #ec803f;
---secondary0__interaction : undefined;
+--secondary0__background : red;
+--secondary0__foreground : green;
+--secondary0__interaction : purple;
 }
 
 .component {
---main-background-color: #3B3B3D;
---main-text-color: #F9F9FB;
---interaction-color: #2566f2;
+--main-background-color: orange;
+--main-text-color: pink;
+--interaction-color: lavendar;
 background-color: var(--main-background-color);
 color: var(--main-text-color);
-&--primary{--main-background-color : #3b3b3d;
+&--primary{--main-background-color : skyblue;
 --main-text-color : #f9f9fb;
---interaction-color : #2566f2;
+--interaction-color : orangered;
 }
 &--secondary0 {
 --main-background-color: var(--secondary0__background);
@@ -22,8 +22,8 @@ color: var(--main-text-color);
 }
 
 .c-navigation {
---main-background-color: #1B1B1D;
---main-text-color: #D9D9DC;
+--main-background-color: teal;
+--main-text-color: darkslategray;
 &--secondary0 {
 --main-background-color: var(--secondary0__background);
 --main-text-color: var(--secondary0__foreground);
@@ -32,8 +32,8 @@ color: var(--main-text-color);
 }
 
 .c-footer {
---main-background-color: #1B1B1D;
---main-text-color: #D9D9DC;
+--main-background-color: yellow;
+--main-text-color: darkgreen;
 &--secondary0 {
 --main-background-color: var(--secondary0__background);
 --main-text-color: var(--secondary0__foreground);
