@@ -1,18 +1,24 @@
 :root {
+<<<<<<< HEAD
 --secondary0__background : #1b1b1d;
 --secondary0__foreground : #d9d9dc;
 --secondary0__interaction : #2566f2;
+=======
+--secondary0__background : red;
+--secondary0__foreground : green;
+--secondary0__interaction : purple;
+>>>>>>> 36ba0ce57788675e92854ccdc64be25128d2a1ca
 }
 
 .component {
---main-background-color: #3B3B3D;
---main-text-color: #F9F9FB;
---interaction-color: #2566f2;
+--main-background-color: orange;
+--main-text-color: pink;
+--interaction-color: lavendar;
 background-color: var(--main-background-color);
 color: var(--main-text-color);
-&--primary{--main-background-color : #3b3b3d;
+&--primary{--main-background-color : skyblue;
 --main-text-color : #f9f9fb;
---interaction-color : #2566f2;
+--interaction-color : orangered;
 }
 &--secondary0 {
 --main-background-color: var(--secondary0__background);
@@ -22,6 +28,7 @@ color: var(--main-text-color);
 }
 
 .c-navigation {
+<<<<<<< HEAD
 --main-background-color: #1B1B1D;
 --main-text-color: #D9D9DC;
 &--primary {
@@ -29,6 +36,10 @@ color: var(--main-text-color);
 --main-text-color: var(--primary__foreground);
 --interaction-color: var(--primary__interaction);
 }
+=======
+--main-background-color: teal;
+--main-text-color: darkslategray;
+>>>>>>> 36ba0ce57788675e92854ccdc64be25128d2a1ca
 &--secondary0 {
 --main-background-color: var(--secondary0__background);
 --main-text-color: var(--secondary0__foreground);
@@ -37,6 +48,7 @@ color: var(--main-text-color);
 }
 
 .c-footer {
+<<<<<<< HEAD
 --main-background-color: #1B1B1D;
 --main-text-color: #D9D9DC;
 &--primary {
@@ -44,6 +56,10 @@ color: var(--main-text-color);
 --main-text-color: var(--primary__foreground);
 --interaction-color: var(--primary__interaction);
 }
+=======
+--main-background-color: yellow;
+--main-text-color: darkgreen;
+>>>>>>> 36ba0ce57788675e92854ccdc64be25128d2a1ca
 &--secondary0 {
 --main-background-color: var(--secondary0__background);
 --main-text-color: var(--secondary0__foreground);
