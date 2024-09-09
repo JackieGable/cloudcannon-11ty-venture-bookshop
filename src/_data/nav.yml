@@ -10,4 +10,6 @@ navigation_items:
   - label: Contact Us
     link_url: /contact
     open_in_new_tab: false
+  - label: Stuff
+    open_in_new_tab: false
 nav_color_group: secondary0
