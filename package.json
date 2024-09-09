@@ -5,16 +5,19 @@
   "main": "index.js",
   "scripts": {
     "fetch-theme-variables": "node ./utils/fetch-theme-variables.js",
+    "eleventy:watch": "cross-env ELEVENTY_ENV=development eleventy --watch",
+    "eleventy:production": "cross-env ELEVENTY_ENV=production eleventy",
     "bookshop-sass:build": "bookshop-sass -b component-library -o css/bookshop.css",
     "bookshop-sass:watch": "bookshop-sass -b component-library -o css/bookshop.css -w",
     "bookshop:browser": "bookshop-browser",
     "bookshop:new": "npx @bookshop/init --component",
     "bookshop:update": "npx @bookshop/up@latest",
     "eleventy:build": "eleventy",
-    "eleventy:watch": "ELEVENTY_ENV=development eleventy --serve",
+    "eleventy:serve": "ELEVENTY_ENV=development eleventy --serve",
     "sass:watch": "sass --no-source-map --watch src/assets/styles:css",
     "sass:build": "sass --no-source-map src/assets/styles:css",
-    "start": "npm-run-all fetch-theme-variables sass:build bookshop-sass:build --parallel bookshop-sass:watch sass:watch bookshop:browser eleventy:watch"
+    "start": "npm-run-all fetch-theme-variables sass:build bookshop-sass:build --parallel bookshop-sass:watch sass:watch bookshop:browser eleventy:watch",
+    "serve": "npx @11ty/eleventy --serve --port=8081"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^3.1.8",
     "@bookshop/sass": "^3.6.5",
+    "cross-env": "^7.0.3",
     "eleventy-plugin-svg-contents": "^0.7.0",
     "outdent": "^0.8.0"
   },

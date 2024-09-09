@@ -1,7 +1,7 @@
 :root {
 --secondary0__background : #1b1b1d;
 --secondary0__foreground : #d9d9dc;
---secondary0__interaction : undefined;
+--secondary0__interaction : #2566f2;
 }
 
 .component {
@@ -24,6 +24,11 @@ color: var(--main-text-color);
 .c-navigation {
 --main-background-color: #1B1B1D;
 --main-text-color: #D9D9DC;
+&--primary {
+--main-background-color: var(--primary__background);
+--main-text-color: var(--primary__foreground);
+--interaction-color: var(--primary__interaction);
+}
 &--secondary0 {
 --main-background-color: var(--secondary0__background);
 --main-text-color: var(--secondary0__foreground);
@@ -34,6 +39,11 @@ color: var(--main-text-color);
 .c-footer {
 --main-background-color: #1B1B1D;
 --main-text-color: #D9D9DC;
+&--primary {
+--main-background-color: var(--primary__background);
+--main-text-color: var(--primary__foreground);
+--interaction-color: var(--primary__interaction);
+}
 &--secondary0 {
 --main-background-color: var(--secondary0__background);
 --main-text-color: var(--secondary0__foreground);
