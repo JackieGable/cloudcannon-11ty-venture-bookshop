@@ -5,7 +5,7 @@
 }
 
 .component {
-  --main-background-color: #3B3B3D;
+  --main-background-color: salmon;
   --main-text-color: #F9F9FB;
   --interaction-color: #2566f2;
   background-color: var(--main-background-color);

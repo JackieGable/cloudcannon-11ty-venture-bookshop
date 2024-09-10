@@ -1,3 +1,5 @@
+
+
 .c-hero {
   $c: &;    
   height: calc(100svh - var(--nav-height));
@@ -105,4 +107,9 @@
       }
     }
   }
+}
+
+
+.c-hero--image-right {
+  background-color: salmon !important;
 }
